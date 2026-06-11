@@ -117,8 +117,8 @@ Two traps the manual audit fell into that the dashboard design should avoid:
    *syntactically broken* (unquoted glob) for months — present in the tree,
    never parsed by Actions. If the daily backstop scrapes for file existence,
    it would have reported green. Recommendation: where a workflow matters,
-   record its **last run conclusion + timestamp** (one `gh api
-   .../actions/workflows/<file>/runs?per_page=1` call), not its presence.
+   record its **last run conclusion + timestamp**, not its presence — one
+   `gh api .../actions/workflows/<file>/runs?per_page=1` call.
 2. **`pushed_at` is misleading for staleness.** One Julia repo's `pushed_at`
    moved because of *unmerged* Dependabot branches; default-branch HEAD was
    months old. The daily backstop should read default-branch HEAD (or the
