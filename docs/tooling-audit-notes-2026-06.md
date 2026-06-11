@@ -1,5 +1,15 @@
 # Design notes from the May–June 2026 tooling audits
 
+> **Status: historical design input — [PLAN.md](../PLAN.md) is authoritative.**
+> These notes fed the plan; where they conflict, the plan wins. Known
+> superseded points: §5's "backstop is effectively the primary source" — the
+> plan has **no scrape/backstop at all** (single pull-based producer via
+> `QuantEcon/actions`); §5's append-only per-publish store — the plan keeps
+> the **lecture sites as the canonical latest** (`qe.status.json`), with
+> history as a future bolt-on collector. The field lists (§1), drift classes
+> (§2), and findings (§3–§4) remain valid evidence; the §6 baseline is still
+> pending delivery as JSON once the history collector exists.
+
 **Date:** 2026-06-11
 **Context:** Two manual tooling audits of the QuantEcon org were run recently — a
 baseline on 2026-05-27 (34 tier-1 repos) and a delta refresh on 2026-06-11.
