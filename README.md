@@ -6,6 +6,13 @@ This repository is the central **data store + dashboard** for environment and
 build-configuration reporting across the `lecture-*` series. It is GitHub-native:
 the data lives in-repo as JSON and the dashboard is published via GitHub Pages.
 
+It is one of the org's `status-*` dashboards, alongside
+[status-translations](https://quantecon.github.io/status-translations/) (coverage
+and freshness of every language edition) and
+[status-projects](https://quantecon.github.io/status-projects/) (what projects the
+org has across every programme, and how each is going). All of them are listed in
+the operations manual's [Dashboards directory](https://manual.quantecon.org/stats/dashboards.html).
+
 ## What it tracks
 
 For each lecture series: build runner (container vs conda, container tag/digest,
